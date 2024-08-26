@@ -218,122 +218,175 @@ class PlayState extends FlxState
 					FlxTween.tween(healthP2, {angle: 5}, 0.3, {ease: FlxEase.expoOut});
 				}
 			}
-		}
 
-		var preBeats = 4;
-
-		function organizeNotes()
-		{
-			var noteList = songJson.chart;
-
-			var usedTimeList = [];
-
-			birdList.forEachAlive(function(bird)
+			if (FlxG.keys.anyJustPressed(inputKeys) && !isGameover)
 			{
-				usedTimeList.push(bird.time);
-			});
+				bosip.playAnim('throw');
+				throwSound.play(true);
 
-			for (note in noteList)
-			{
-				if (!usedTimeList.contains(note.time) && conductor.getMil() < note.time)
+				var closestTimedBird:Bird = null;
+				birdList.forEachAlive(function(bird)
 				{
-					birdList.add(new Bird(note.id, note.time, conductor.getBPM().bpm));
+					if (getRank(bird.time) == rankings.length)
+						return;
+					if (closestTimedBird == null)
+						closestTimedBird = bird;
+					if (Math.abs(conductor.getMil() - bird.time) < Math.abs(conductor.getMil() - closestTimedBird.time))
+						closestTimedBird = bird;
+				});
+
+				if (closestTimedBird != null)
+				{
+					var tempRank = getRank(closestTimedBird.time);
+					ratingSprite.add(new RatingSprite(tempRank));
+					rankList.push({time: closestTimedBird.time, difference: conductor.getMil() - closestTimedBird.time});
+					closestTimedBird.shouldRank = false;
+					trace(conductor.getMil() - closestTimedBird.time);
+					switch (tempRank)
+					{
+						case 0:
+							changeHealth(15);
+						case 1:
+							changeHealth(5);
+						case 2:
+							changeHealth(-5);
+						case 3:
+							changeHealth(-10);
+					}
 				}
 			}
-		}
 
-		function getRank(time:Int)
-		{
-			var difference = Math.abs(conductor.getMil() - time);
-
-			for (index => rank in rankings)
+			if (isGameover && FlxG.keys.anyJustPressed([ENTER, SPACE]))
 			{
-				if (difference < rank)
-					return index;
-			}
-			return rankings.length;
-		}
-
-		function gameover()
-		{
-			isGameover = true;
-			bob.playAnim('gameover');
-			bosip.playAnim('gameover');
-			conductor.pause();
-
-			FlxTween.tween(songInst, {volume: 0}, 2);
-			FlxTween.tween(gameoverBlack, {alpha: 0.9}, 2);
-		}
-
-		function retry()
-		{
-			bob.playAnim('retry');
-			bosip.playAnim('idle');
-			FlxTween.tween(gameoverBlack, {alpha: 0}, 2, {
-				onComplete: (tween) ->
-				{
-					FlxG.switchState(new PlayState());
-				}
-			});
-		}
-
-		function win()
-		{
-			bob.playAnim('happy');
-			bosip.playAnim('happy');
-			var startFade = new Timer(1000);
-			startFade.run = () ->
-			{
-				openSubState(new SongFinishedSubState(rankList));
-				startFade.stop();
+				retry();
 			}
 		}
 
-		function changeHealth(health:Int)
+		// ! THIS IS DEBUG CODE
+		if (FlxG.keys.justPressed.F2)
 		{
-			bosip.health += health;
-			if (bosip.health < 0)
-			{
-				bosip.health = 0;
-			}
-			else if (bosip.health > 100)
-			{
-				bosip.health = 100;
-			}
-
-			healthBar.percent = bosip.health;
-
-			FlxTween.tween(healthP1, {x: healthBar.percent / 100 * 590 + 255}, 0.5, {ease: FlxEase.expoOut});
-			FlxTween.tween(healthP2, {x: healthBar.percent / 100 * 590 + 305}, 0.5, {ease: FlxEase.expoOut});
-
-			if (healthBar.percent <= 0)
-			{
-				gameover();
-			}
+			songInst.onComplete();
 		}
-
-		override function onFocusLost()
+		if (FlxG.keys.justPressed.F1)
 		{
-			if (conductor != null)
-				conductor.pause();
-			else
-				countConductor.pause();
-			super.onFocusLost();
-		}
-
-		override function onFocus()
-		{
-			if (!isGameover)
-			{
-				if (conductor != null)
-				{
-					conductor.unPause();
-					songInst.time = conductor.getMil();
-				}
-				else
-					countConductor.unPause();
-			}
-
-			super.onFocus();
+			FlxG.switchState(new PlayState());
 		}
 	}
+
+	var preBeats = 4;
+
+	function organizeNotes()
+	{
+		var noteList = songJson.chart;
+
+		var usedTimeList = [];
+
+		birdList.forEachAlive(function(bird)
+		{
+			usedTimeList.push(bird.time);
+		});
+
+		for (note in noteList)
+		{
+			if (!usedTimeList.contains(note.time) && conductor.getMil() < note.time)
+			{
+				birdList.add(new Bird(note.id, note.time, conductor.getBPM().bpm));
+			}
+		}
+	}
+
+	function getRank(time:Int)
+	{
+		var difference = Math.abs(conductor.getMil() - time);
+
+		for (index => rank in rankings)
+		{
+			if (difference < rank)
+				return index;
+		}
+		return rankings.length;
+	}
+
+	function gameover()
+	{
+		isGameover = true;
+		bob.playAnim('gameover');
+		bosip.playAnim('gameover');
+		conductor.pause();
+
+		FlxTween.tween(songInst, {volume: 0}, 2);
+		FlxTween.tween(gameoverBlack, {alpha: 0.9}, 2);
+	}
+
+	function retry()
+	{
+		bob.playAnim('retry');
+		bosip.playAnim('idle');
+		FlxTween.tween(gameoverBlack, {alpha: 0}, 2, {
+			onComplete: (tween) ->
+			{
+				FlxG.switchState(new PlayState());
+			}
+		});
+	}
+
+	function win()
+	{
+		bob.playAnim('happy');
+		bosip.playAnim('happy');
+		var startFade = new Timer(1000);
+		startFade.run = () ->
+		{
+			openSubState(new SongFinishedSubState(rankList));
+			startFade.stop();
+		}
+	}
+
+	function changeHealth(health:Int)
+	{
+		bosip.health += health;
+		if (bosip.health < 0)
+		{
+			bosip.health = 0;
+		}
+		else if (bosip.health > 100)
+		{
+			bosip.health = 100;
+		}
+
+		healthBar.percent = bosip.health;
+
+		FlxTween.tween(healthP1, {x: healthBar.percent / 100 * 590 + 255}, 0.5, {ease: FlxEase.expoOut});
+		FlxTween.tween(healthP2, {x: healthBar.percent / 100 * 590 + 305}, 0.5, {ease: FlxEase.expoOut});
+
+		if (healthBar.percent <= 0)
+		{
+			gameover();
+		}
+	}
+
+	override function onFocusLost()
+	{
+		if (conductor != null)
+			conductor.pause();
+		else
+			countConductor.pause();
+		super.onFocusLost();
+	}
+
+	override function onFocus()
+	{
+		if (!isGameover)
+		{
+			if (conductor != null)
+			{
+				conductor.unPause();
+				songInst.time = conductor.getMil();
+			}
+			else
+				countConductor.unPause();
+		}
+
+		super.onFocus();
+	}
+}
