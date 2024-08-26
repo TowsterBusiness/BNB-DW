@@ -131,5 +131,65 @@ class SongFinishedSubState extends FlxSubState
 		{
 			FlxTween.tween(ratingSprite, {y: 200, angle: 0}, 2, {ease: FlxEase.cubeOut});
 		}
+
+		// Message Animations
+		var mmStartTimer = new Timer(3000);
+		mmStartTimer.run = () ->
+		{
+			var mainMessageTimer = new FlxTimer().start(0.05, (timer) ->
+			{
+				var lastWidth = mainMessage.width;
+				mainMessage.text += mainMessageText.charAt(loadedTextPointer + 1);
+				loadedTextPointer++;
+				var curWidth = mainMessage.width;
+				mainMessage.x -= (curWidth - lastWidth) / 2;
+				dialogueSound.play(true);
+			}, mainMessageText.length);
+
+			mmStartTimer.stop();
+		}
+
+		var nextTimer = new Timer(4000);
+		nextTimer.run = () ->
+		{
+			var flickeringEnter = new FlxTimer().start(0.5, (timer) ->
+			{
+				if (enterText.alpha == 0)
+					enterText.alpha = 1
+				else
+					enterText.alpha = 0;
+			}, 0);
+
+			nextTimer.stop();
+		}
+	}
+
+	function getRank(difference:Int)
+	{
+		for (index => rank in rankings)
+		{
+			if (difference < rank)
+				return index;
+		}
+		return rankings.length;
+	}
+
+	override function update(elapsed:Float)
+	{
+		super.update(elapsed);
+
+		if (FlxG.mouse.overlaps(ratingSprite))
+		{
+			ratingSprite.scale.set(1.2, 1.2);
+		}
+		else
+		{
+			ratingSprite.scale.set(1, 1);
+		}
+
+		if (FlxG.keys.justPressed.ENTER)
+		{
+			FlxG.switchState(new MenuState());
+		}
 	}
 }
