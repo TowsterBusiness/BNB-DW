@@ -41,5 +41,45 @@ class Conductor
 				beenChanged = true;
 			}
 		}
+		if (beenChanged)
+		{
+			return returnBpm;
+		}
+		else
+		{
+			returnBpm = {time: 9999999, bpm: 120};
+			for (bpm in bpmJson)
+			{
+				if (bpm.time < returnBpm.time)
+				{
+					returnBpm = bpm;
+					beenChanged = true;
+				}
+			}
+			if (beenChanged)
+				return bpmJson[0]
+			else
+				return returnBpm;
+		}
+	}
+
+	public function pastBeat():Bool
+	{
+		var bpmNow:BPMJson = getBPM();
+
+		if (nextBeatCheck >= bpmNow.time && beatCheckBPM != bpmNow)
+		{
+			trace("I'm annoying " + bpmNow);
+			nextBeatCheck = bpmNow.time;
+			beatCheckBPM = bpmNow;
+			trace(Timer.stamp() * 1000);
+		}
+
+		if (getMil() > nextBeatCheck)
+		{
+			nextBeatCheck += (60000 / bpmNow.bpm);
+			return true;
+		}
+		return false;
 	}
 }
