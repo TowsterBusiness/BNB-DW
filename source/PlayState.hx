@@ -132,4 +132,24 @@ class PlayState extends FlxState
 			countState = 1;
 		}
 	}
+
+	function organizeNotes()
+	{
+		var noteList = songJson.chart;
+
+		var usedTimeList = [];
+
+		birdList.forEachAlive(function(bird)
+		{
+			usedTimeList.push(bird.time);
+		});
+
+		for (note in noteList)
+		{
+			if (!usedTimeList.contains(note.time) && conductor.getMil() < note.time)
+			{
+				birdList.add(new Bird(note.id, note.time, conductor.getBPM().bpm));
+			}
+		}
+	}
 }
