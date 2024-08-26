@@ -210,4 +210,29 @@ class PlayState extends FlxState
 			gameover();
 		}
 	}
+
+	override function onFocusLost()
+	{
+		if (conductor != null)
+			conductor.pause();
+		else
+			countConductor.pause();
+		super.onFocusLost();
+	}
+
+	override function onFocus()
+	{
+		if (!isGameover)
+		{
+			if (conductor != null)
+			{
+				conductor.unPause();
+				songInst.time = conductor.getMil();
+			}
+			else
+				countConductor.unPause();
+		}
+
+		super.onFocus();
+	}
 }
