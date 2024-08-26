@@ -106,5 +106,30 @@ class SongFinishedSubState extends FlxSubState
 			mainMessageText = "How??????";
 			finalRating = "F-";
 		}
+
+		dialogueSound = TowPaths.getFile('dialogue', OGG);
+
+		ratingSprite = new FlxText(0, -200, 0, finalRating, 100);
+		ratingSprite.screenCenter(X);
+		ratingSprite.centerOrigin();
+		ratingSprite.angle = 90;
+		ratingSprite.font = TowPaths.getFilePath('fonts/Pangolin-Regular.ttf');
+		add(ratingSprite);
+
+		mainMessage = new FlxText(0, 450, 0, "", 70);
+		mainMessage.font = TowPaths.getFilePath('fonts/Pangolin-Regular.ttf');
+		mainMessage.screenCenter(X);
+		add(mainMessage);
+
+		enterText = new FlxText(0, 660, 0, 'Press ENTER!', 20);
+		enterText.alpha = 0;
+		add(enterText);
+
+		// Rating Animations
+		var ratingTimer = new Timer(1000);
+		ratingTimer.run = () ->
+		{
+			FlxTween.tween(ratingSprite, {y: 200, angle: 0}, 2, {ease: FlxEase.cubeOut});
+		}
 	}
 }
