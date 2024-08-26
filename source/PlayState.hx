@@ -10,6 +10,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
 import haxe.Timer;
+import towsterFlxUtil.*;
 
 class PlayState extends FlxState
 {
@@ -99,5 +100,36 @@ class PlayState extends FlxState
 		gameoverBlack = new FlxSprite(0, 0).loadGraphic(TowPaths.getFilePath('blackScreen_holed', PNG));
 		gameoverBlack.alpha = 0;
 		add(gameoverBlack);
+		// everything after this point will not be covered with black in gameover
+		bob = new TowSprite(675, 190, 'characters/bob_assets');
+		bob.loadAnimations('characters/bob');
+		bob.scale.set(0.5, 0.5);
+		bob.playAnim('idle');
+		bob.updateHitbox();
+		bosip = new TowSprite(500, 150, 'characters/bosip_assets');
+		bosip.loadAnimations('characters/bosip');
+		bosip.scale.set(0.5, 0.5);
+		bosip.playAnim('idle');
+		bosip.updateHitbox();
+		bosip.health = 50;
+		add(bob);
+		add(bosip);
+
+		birdList = new FlxTypedSpriteGroup(0, 0, 999);
+		add(birdList);
+
+		countSprite = new SongCountDownSprite();
+		add(countSprite);
+	}
+
+	override public function update(elapsed:Float)
+	{
+		super.update(elapsed);
+
+		if (countState == 0)
+		{
+			countConductor = new Conductor(songJson.bpmList, -1000);
+			countState = 1;
+		}
 	}
 }
