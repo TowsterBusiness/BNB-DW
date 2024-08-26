@@ -4,7 +4,10 @@ This is the start of a larger project but I thought I would chunk this out since
 
 All the functions are there for you to make a rythm heaven style rythm game
 
-Theres also an endstate that you can costomize from the score you get in the game.
+Theres also an endstate that you can customize from the score you get in the game.
+In addition to New Sprites you can add to to add to your project
+
+These are all the things that I would want in my project so I hope that helps you out as well!
 
 # [Building](https://github.com/ShadowMario/FNF-PsychEngine/edit/main/BUILDING.md)
 
