@@ -6,8 +6,7 @@ All the functions are there for you to make a rythm heaven style rythm game
 
 Theres also an endstate that you can costomize from the score you get in the game.
 
-# Building 
-(Building)[https://github.com/ShadowMario/FNF-PsychEngine/edit/main/BUILDING.md]
+# [Building](https://github.com/ShadowMario/FNF-PsychEngine/edit/main/BUILDING.md)
 
 ### Dependencies
 
