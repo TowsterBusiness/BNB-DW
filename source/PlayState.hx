@@ -152,4 +152,62 @@ class PlayState extends FlxState
 			}
 		}
 	}
+
+	function getRank(time:Int)
+	{
+		var difference = Math.abs(conductor.getMil() - time);
+
+		for (index => rank in rankings)
+		{
+			if (difference < rank)
+				return index;
+		}
+		return rankings.length;
+	}
+
+	function gameover()
+	{
+		isGameover = true;
+		bob.playAnim('gameover');
+		bosip.playAnim('gameover');
+		conductor.pause();
+
+		FlxTween.tween(songInst, {volume: 0}, 2);
+		FlxTween.tween(gameoverBlack, {alpha: 0.9}, 2);
+	}
+
+	function retry()
+	{
+		bob.playAnim('retry');
+		bosip.playAnim('idle');
+		FlxTween.tween(gameoverBlack, {alpha: 0}, 2, {
+			onComplete: (tween) ->
+			{
+				FlxG.switchState(new PlayState());
+			}
+		});
+	}
+
+	function changeHealth(health:Int)
+	{
+		bosip.health += health;
+		if (bosip.health < 0)
+		{
+			bosip.health = 0;
+		}
+		else if (bosip.health > 100)
+		{
+			bosip.health = 100;
+		}
+
+		healthBar.percent = bosip.health;
+
+		FlxTween.tween(healthP1, {x: healthBar.percent / 100 * 590 + 255}, 0.5, {ease: FlxEase.expoOut});
+		FlxTween.tween(healthP2, {x: healthBar.percent / 100 * 590 + 305}, 0.5, {ease: FlxEase.expoOut});
+
+		if (healthBar.percent <= 0)
+		{
+			gameover();
+		}
+	}
 }
