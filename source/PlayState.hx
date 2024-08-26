@@ -18,8 +18,11 @@ class PlayState extends FlxState
 
 	var isGameover:Bool = false;
 
+	var conductor:Conductor;
 	var firstUpdate:Bool = true;
+	var countConductor:Conductor;
 	var countState:Int = 0;
+	var countSprite:SongCountDownSprite;
 
 	var inputKeys:Array<FlxKey> = ['SPACE'];
 
@@ -131,6 +134,53 @@ class PlayState extends FlxState
 			countConductor = new Conductor(songJson.bpmList, -1000);
 			countState = 1;
 		}
+		else if (countState >= 1 && countState <= 4)
+		{
+			if (countConductor.pastBeat())
+			{
+				FlxG.sound.play('assets/sounds/123Go/bosip/' + countState + '.ogg');
+				countSprite.next();
+				countState++;
+			}
+		}
+		else if (countState == 5)
+		{
+			conductor = new Conductor(songJson.bpmList, 0);
+			songInst.play();
+			songInst.time = conductor.getMil();
+			countState = 6;
+		}
+		else
+		{
+			organizeNotes();
+
+			// songInst.time = songInst.length - 10;
+
+			birdList.forEachAlive(function(bird)
+			{
+				if (conductor.getMil() > bird.time + bird.actionTime(0))
+				{
+					// bruh lmao
+					bird.comeIn(Math.floor(Math.abs(bird.actionTime(0))));
+				}
+				if (conductor.getMil() > bird.time + bird.actionTime(1))
+				{
+					bird.peck();
+				}
+			}
+		}
+	}
+
+	function win()
+	{
+		bob.playAnim('happy');
+		bosip.playAnim('happy');
+		var startFade = new Timer(1000);
+		startFade.run = () ->
+		{
+			openSubState(new SongFinishedSubState(rankList));
+			startFade.stop();
+		}
 	}
 
 	function organizeNotes()
@@ -236,3 +286,4 @@ class PlayState extends FlxState
 		super.onFocus();
 	}
 }
+}}

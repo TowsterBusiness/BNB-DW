@@ -82,4 +82,28 @@ class Conductor
 		}
 		return false;
 	}
+
+	public function pause():Void
+	{
+		if (isPause)
+			return;
+		isPause = true;
+		pauseStartTime = getRawMil();
+		trace("Paused");
+	}
+
+	public function unPause():Void
+	{
+		if (!isPause)
+			return;
+		isPause = false;
+		pauseCounter += getRawMil() - pauseStartTime;
+		pauseStartTime = 0;
+		trace("UnPaused");
+	}
+
+	public function getRawMil():Int
+	{
+		return Math.floor(Timer.stamp() * 1000);
+	}
 }
