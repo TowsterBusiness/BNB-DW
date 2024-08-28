@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bob_bosip_dance_title.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bob and bosip bop0000" x="95" y="95" width="893" height="1053" frameX="-2" frameY="0" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0001" x="95" y="95" width="893" height="1053" frameX="-2" frameY="0" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0002" x="1078" y="95" width="882" height="1036" frameX="-14" frameY="-17" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0003" x="1078" y="95" width="882" height="1036" frameX="-14" frameY="-17" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0004" x="2050" y="95" width="885" height="1027" frameX="-11" frameY="-26" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0005" x="2050" y="95" width="885" height="1027" frameX="-11" frameY="-26" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0006" x="3025" y="95" width="887" height="1022" frameX="-10" frameY="-31" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0007" x="3025" y="95" width="887" height="1022" frameX="-10" frameY="-31" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0008" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0009" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0010" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0011" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0012" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0013" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0014" x="1072" y="1238" width="898" height="1015" frameX="-8" frameY="-38" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0015" x="1072" y="1238" width="898" height="1015" frameX="-8" frameY="-38" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0016" x="2060" y="1238" width="919" height="998" frameX="0" frameY="-55" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0017" x="2060" y="1238" width="919" height="998" frameX="0" frameY="-55" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0018" x="3069" y="1238" width="891" height="1012" frameX="-6" frameY="-41" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0019" x="3069" y="1238" width="891" height="1012" frameX="-6" frameY="-41" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0020" x="95" y="2348" width="888" height="1017" frameX="-8" frameY="-36" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0021" x="95" y="2348" width="888" height="1017" frameX="-8" frameY="-36" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0022" x="1073" y="2348" width="887" height="1019" frameX="-9" frameY="-34" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0023" x="1073" y="2348" width="887" height="1019" frameX="-9" frameY="-34" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0024" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0025" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0026" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0027" x="95" y="1238" width="887" height="1020" frameX="-9" frameY="-33" frameWidth="919" frameHeight="1053"/>
+	<SubTexture name="bob and bosip bop0028" x="2050" y="2348" width="886" height="1036" frameX="-10" frameY="-17" frameWidth="919" frameHeight="1053"/>
+</TextureAtlas>
