@@ -1,0 +1,16 @@
+{
+    "imagePath": "start screen/bob_bosip_dance_title",
+    "animation": [
+        {
+            "prefix": "bob and bosip bop0",
+            "name": "idle",
+            "offset": [
+                0,
+                0
+            ],
+            "isLoop": false,
+            "flipX": false,
+            "frameRate": 24
+        }
+    ]
+}
