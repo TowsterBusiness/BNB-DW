@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bosip_assets.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bosip basketball kick0000" x="95" y="95" width="516" height="929" frameX="-117" frameY="0" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0001" x="95" y="95" width="516" height="929" frameX="-117" frameY="0" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0002" x="701" y="95" width="603" height="926" frameX="-30" frameY="-3" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0003" x="701" y="95" width="603" height="926" frameX="-30" frameY="-3" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0004" x="1394" y="95" width="620" height="925" frameX="-13" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0005" x="1394" y="95" width="620" height="925" frameX="-13" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0006" x="2104" y="95" width="622" height="925" frameX="-11" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0007" x="2104" y="95" width="622" height="925" frameX="-11" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0008" x="2104" y="95" width="622" height="925" frameX="-11" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0009" x="2104" y="95" width="622" height="925" frameX="-11" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0010" x="2816" y="95" width="620" height="925" frameX="-13" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0011" x="2816" y="95" width="620" height="925" frameX="-13" frameY="-4" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0012" x="3526" y="95" width="603" height="926" frameX="-30" frameY="-3" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0013" x="3526" y="95" width="603" height="926" frameX="-30" frameY="-3" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0014" x="4219" y="95" width="516" height="929" frameX="-117" frameY="0" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick0015" x="4219" y="95" width="516" height="929" frameX="-117" frameY="0" frameWidth="633" frameHeight="929"/>
+	<SubTexture name="bosip basketball kick MISS0000" x="4825" y="95" width="497" height="928"/>
+	<SubTexture name="bosip basketball kick MISS0001" x="4825" y="95" width="497" height="928"/>
+	<SubTexture name="bosip basketball kick MISS0002" x="5412" y="95" width="497" height="927" frameX="0" frameY="-1" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0003" x="5412" y="95" width="497" height="927" frameX="0" frameY="-1" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0004" x="5999" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0005" x="5999" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0006" x="6586" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0007" x="6586" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0008" x="6586" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball kick MISS0009" x="6586" y="95" width="497" height="926" frameX="0" frameY="-2" frameWidth="497" frameHeight="928"/>
+	<SubTexture name="bosip basketball notice0000" x="7173" y="95" width="495" height="923" frameX="0" frameY="-6" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0001" x="7173" y="95" width="495" height="923" frameX="0" frameY="-6" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0002" x="95" y="1114" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0003" x="95" y="1114" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0004" x="680" y="1114" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0005" x="680" y="1114" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip basketball notice0006" x="680" y="1114" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="929"/>
+	<SubTexture name="bosip bread crumb grab0000" x="1265" y="1114" width="516" height="931" frameX="0" frameY="0" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0001" x="1265" y="1114" width="516" height="931" frameX="0" frameY="0" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0002" x="1871" y="1114" width="515" height="927" frameX="-4" frameY="-3" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0003" x="1871" y="1114" width="515" height="927" frameX="-4" frameY="-3" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0004" x="2476" y="1114" width="514" height="926" frameX="-5" frameY="-3" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0005" x="2476" y="1114" width="514" height="926" frameX="-5" frameY="-3" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip bread crumb grab0006" x="2476" y="1114" width="514" height="926" frameX="-5" frameY="-3" frameWidth="519" frameHeight="931"/>
+	<SubTexture name="bosip breadcrumb throw0000" x="3080" y="1114" width="672" height="929" frameX="-95" frameY="0" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0001" x="3080" y="1114" width="672" height="929" frameX="-95" frameY="0" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0002" x="3842" y="1114" width="720" height="926" frameX="-47" frameY="-3" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0003" x="3842" y="1114" width="720" height="926" frameX="-47" frameY="-3" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0004" x="4652" y="1114" width="750" height="926" frameX="-17" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0005" x="4652" y="1114" width="750" height="926" frameX="-17" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0006" x="5492" y="1114" width="767" height="926" frameX="0" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0007" x="5492" y="1114" width="767" height="926" frameX="0" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0008" x="6349" y="1114" width="564" height="926" frameX="-203" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0009" x="6349" y="1114" width="564" height="926" frameX="-203" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0010" x="6349" y="1114" width="564" height="926" frameX="-203" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw0011" x="6349" y="1114" width="564" height="926" frameX="-203" frameY="-4" frameWidth="767" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0000" x="7003" y="1114" width="563" height="929" frameX="-3" frameY="0" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0001" x="7003" y="1114" width="563" height="929" frameX="-3" frameY="0" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0002" x="95" y="2135" width="563" height="926" frameX="-3" frameY="-3" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0003" x="95" y="2135" width="563" height="926" frameX="-3" frameY="-3" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0004" x="748" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0005" x="748" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0006" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0007" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0008" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0009" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0010" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip breadcrumb throw MISS0011" x="1401" y="2135" width="563" height="926" frameX="-3" frameY="-4" frameWidth="566" frameHeight="930"/>
+	<SubTexture name="bosip gameover0000" x="2054" y="2135" width="495" height="926"/>
+	<SubTexture name="bosip gameover0001" x="2639" y="2135" width="495" height="922" frameX="0" frameY="-4" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0002" x="3224" y="2135" width="495" height="920" frameX="0" frameY="-6" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0003" x="3809" y="2135" width="495" height="919" frameX="0" frameY="-7" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0004" x="4394" y="2135" width="495" height="919" frameX="0" frameY="-7" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0005" x="4979" y="2135" width="495" height="918" frameX="0" frameY="-8" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0006" x="5564" y="2135" width="495" height="918" frameX="0" frameY="-8" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0007" x="5564" y="2135" width="495" height="918" frameX="0" frameY="-8" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0008" x="6149" y="2135" width="495" height="922" frameX="0" frameY="-4" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0009" x="6734" y="2135" width="495" height="923" frameX="0" frameY="-3" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0010" x="7319" y="2135" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0011" x="7319" y="2135" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0012" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0013" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0014" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0015" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0016" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0017" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0018" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0019" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0020" x="95" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0021" x="680" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0022" x="680" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0023" x="1265" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0024" x="1265" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0025" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0026" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0027" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0028" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0029" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0030" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0031" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0032" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0033" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0034" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0035" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0036" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0037" x="1850" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0038" x="2435" y="3151" width="495" height="919" frameX="0" frameY="-7" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0039" x="2435" y="3151" width="495" height="919" frameX="0" frameY="-7" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0040" x="3020" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover0041" x="3020" y="3151" width="495" height="924" frameX="0" frameY="-2" frameWidth="495" frameHeight="926"/>
+	<SubTexture name="bosip gameover retry0000" x="3605" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0001" x="4190" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0002" x="4775" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0003" x="4775" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0004" x="5360" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0005" x="5360" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0006" x="5945" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0007" x="5945" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0008" x="6530" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0009" x="6530" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0010" x="6530" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip gameover retry0011" x="6530" y="3151" width="495" height="924"/>
+	<SubTexture name="bosip happy0000" x="7115" y="3151" width="494" height="920" frameX="0" frameY="-8" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0001" x="7115" y="3151" width="494" height="920" frameX="0" frameY="-8" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0002" x="95" y="4165" width="494" height="925" frameX="0" frameY="-2" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0003" x="95" y="4165" width="494" height="925" frameX="0" frameY="-2" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0004" x="679" y="4165" width="494" height="925" frameX="0" frameY="-1" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0005" x="679" y="4165" width="494" height="925" frameX="0" frameY="-1" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0006" x="1263" y="4165" width="494" height="926" frameX="0" frameY="0" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0007" x="1263" y="4165" width="494" height="926" frameX="0" frameY="0" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0008" x="1263" y="4165" width="494" height="926" frameX="0" frameY="0" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip happy0009" x="1263" y="4165" width="494" height="926" frameX="0" frameY="0" frameWidth="494" frameHeight="928"/>
+	<SubTexture name="bosip idle0000" x="1847" y="4165" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0001" x="1847" y="4165" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0002" x="2432" y="4165" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0003" x="2432" y="4165" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0004" x="3017" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0005" x="3017" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0006" x="3602" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0007" x="3602" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0008" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0009" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0010" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0011" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0012" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0013" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0014" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0015" x="4772" y="4165" width="495" height="918" frameX="0" frameY="-13" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0016" x="4772" y="4165" width="495" height="918" frameX="0" frameY="-13" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0017" x="5357" y="4165" width="495" height="924" frameX="0" frameY="-5" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0018" x="5357" y="4165" width="495" height="924" frameX="0" frameY="-5" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0019" x="5942" y="4165" width="495" height="925" frameX="0" frameY="-3" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0020" x="5942" y="4165" width="495" height="925" frameX="0" frameY="-3" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0021" x="6527" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0022" x="6527" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0023" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0024" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0025" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0026" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0027" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0028" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip idle0029" x="4187" y="4165" width="495" height="926" frameX="0" frameY="-1" frameWidth="495" frameHeight="931"/>
+	<SubTexture name="bosip phone ring MISS0000" x="7112" y="4165" width="562" height="931" frameX="0" frameY="0" frameWidth="562" frameHeight="932"/>
+	<SubTexture name="bosip phone ring MISS0001" x="7112" y="4165" width="562" height="931" frameX="0" frameY="0" frameWidth="562" frameHeight="932"/>
+	<SubTexture name="bosip phone ring MISS0002" x="95" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0003" x="95" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0004" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0005" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0006" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0007" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0008" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring MISS0009" x="747" y="5186" width="562" height="932"/>
+	<SubTexture name="bosip phone ring decline0000" x="1399" y="5186" width="564" height="928" frameX="0" frameY="-2" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0001" x="1399" y="5186" width="564" height="928" frameX="0" frameY="-2" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0002" x="2053" y="5186" width="564" height="931" frameX="0" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0003" x="2053" y="5186" width="564" height="931" frameX="0" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0004" x="2707" y="5186" width="564" height="932"/>
+	<SubTexture name="bosip phone ring decline0005" x="2707" y="5186" width="564" height="932"/>
+	<SubTexture name="bosip phone ring decline0006" x="3361" y="5186" width="564" height="932"/>
+	<SubTexture name="bosip phone ring decline0007" x="3361" y="5186" width="564" height="932"/>
+	<SubTexture name="bosip phone ring decline0008" x="4015" y="5186" width="553" height="932" frameX="-11" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0009" x="4015" y="5186" width="553" height="932" frameX="-11" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0010" x="4658" y="5186" width="558" height="932" frameX="-6" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring decline0011" x="4658" y="5186" width="558" height="932" frameX="-6" frameY="0" frameWidth="564" frameHeight="932"/>
+	<SubTexture name="bosip phone ring notice0000" x="5306" y="5186" width="491" height="921" frameX="0" frameY="-7" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0001" x="5306" y="5186" width="491" height="921" frameX="0" frameY="-7" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0002" x="5887" y="5186" width="495" height="925" frameX="0" frameY="-1" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0003" x="5887" y="5186" width="495" height="925" frameX="0" frameY="-1" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0004" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0005" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0006" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0007" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0008" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+	<SubTexture name="bosip phone ring notice0009" x="6472" y="5186" width="495" height="926" frameX="0" frameY="0" frameWidth="495" frameHeight="928"/>
+</TextureAtlas>
