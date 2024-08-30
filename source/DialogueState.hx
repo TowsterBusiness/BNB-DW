@@ -109,4 +109,30 @@ class DialogueState extends FlxState
 			playCharAnim();
 		}
 	}
+
+	function newText(num:Int)
+	{
+		var dialogueSecJson:DialogueTextJson = dialogueJson[num];
+		dialogueText.nextText(dialogueSecJson.text);
+		characterList.forEachAlive(function(char)
+		{
+			if (char.id != dialogueSecJson.character)
+				return;
+
+			char.playAnim(dialogueSecJson.anim);
+			dialogueBox.playAnim('start');
+			characterList.alpha = 0;
+			FlxTween.tween(characterList, {alpha: 1}, 0.2);
+		});
+	}
+
+	function playCharAnim()
+	{
+		var dialogueSecJson:DialogueTextJson = dialogueJson[textNum];
+		characterList.forEachAlive(function(char)
+		{
+			if (char.id == dialogueSecJson.character && char.animation.finished)
+				char.playAnim(dialogueSecJson.anim);
+		});
+	}
 }
