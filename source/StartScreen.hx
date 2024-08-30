@@ -101,4 +101,95 @@ class StartScreen extends FlxState
 		fade = new Fade(true);
 		add(fade);
 	}
+
+	var first = 0;
+
+	var last:Float = 0;
+
+	var right:Bool = true;
+	var startText:Array<String> = [
+		"Bob & Bosip Date Week",
+		"Made with love and care by:",
+		"Made with love and care by:\nArt: Pieroshki",
+		"Made with love and care by:\nArt: Pieroshki\nCode: Towster",
+		"Made with love and care by:\nArt: Pieroshki\nCode: Towster\nMusic: Fluffyhairs & No-p",
+		"Stole assets from FNF",
+		"Inspired by Rythm Heaven",
+	];
+	var textBeatNum:Int;
+
+	override function update(elapsed:Float)
+	{
+		if (first == 0)
+		{
+			conductor = new Conductor([{"bpm": 125, "time": 0}]);
+			first = -1;
+		}
+
+		BG.y = -50 * (Math.sin(2 * Timer.stamp() * 3.1415) / 2 + 0.5);
+
+		if (conductor.pastBeat())
+		{
+			if (right)
+			{
+				mainChar.animation.play('right');
+				logoBumpin.playAnim('idle');
+			}
+			else
+			{
+				mainChar.animation.play('left');
+				if (playingIntro)
+				{
+					if (textBeatNum < startText.length)
+					{
+						textSpr.text = startText[textBeatNum];
+						textSpr.screenCenter(XY);
+					}
+					else if (textBeatNum == startText.length)
+					{
+						whiteScreen.alpha = 1;
+						blackScreen.alpha = 0;
+						textSpr.alpha = 0;
+						FlxTween.tween(whiteScreen, {alpha: 0}, 2);
+						playingIntro = false;
+					}
+					textBeatNum++;
+				}
+			}
+			right = !right;
+		}
+
+		if (FlxG.keys.justPressed.ENTER && enterButton.animation.curAnim.name != 'pressed' && playingIntro == false)
+		{
+			enterButton.playAnim('pressed');
+			enterSound.play();
+			fade.goIn(new MenuState());
+		}
+		else if (FlxG.keys.justPressed.ENTER && playingIntro == true)
+		{
+			whiteScreen.alpha = 1;
+			blackScreen.alpha = 0;
+			textSpr.alpha = 0;
+			FlxTween.tween(whiteScreen, {alpha: 0}, 2);
+			playingIntro = false;
+		}
+		if (FlxG.keys.justPressed.U)
+		{
+			FlxG.switchState(new StartScreen());
+		}
+		super.update(elapsed);
+	}
+
+	override function onFocusLost()
+	{
+		conductor.pause();
+		super.onFocusLost();
+	}
+
+	override function onFocus()
+	{
+		conductor.unPause();
+		// song.time = conductor.getMil();
+		super.onFocus();
+	}
 }
