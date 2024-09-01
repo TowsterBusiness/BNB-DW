@@ -1,0 +1,39 @@
+{
+    "dialogue": [
+        {
+            "character": "bosip",
+            "anim": "confused",
+            "text": "Man. He clocked out pretty quick."
+        },
+        {
+            "character": "bosip",
+            "anim": "embarrassed",
+            "text": "His petty shouting must've really worn him \nout."
+        },
+        {
+            "character": "bosip",
+            "anim": "annoyed",
+            "text": "God, why did I fall for this loud dumbass..."
+        },
+        {
+            "character": "bosip",
+            "anim": "happy",
+            "text": " ...This dumbass stupid little cube."
+        },
+        {
+            "character": "bosip",
+            "anim": "regular",
+            "text": "Guess, I better not wake this little cube up."
+        },
+        {
+            "character": "bosip",
+            "anim": "annoyed",
+            "text": "And these birds aren't going to let that \nhappen."
+        },
+        {
+            "character": "bosip",
+            "anim": "happy",
+            "text": "Sleep tight bud, I'll take care of this."
+        }
+    ]
+}

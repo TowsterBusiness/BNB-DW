@@ -1,8 +1,8 @@
 package;
 
+import towsterFlxUtil.TowPaths;
 import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import towsterFlxUtil.TowPaths;
 
 class Background extends FlxTypedSpriteGroup<FlxSprite>
 {

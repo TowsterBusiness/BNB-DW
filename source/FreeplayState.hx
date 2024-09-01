@@ -1,12 +1,12 @@
 package;
 
 import flixel.FlxG;
+import flixel.text.FlxText;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import towsterFlxUtil.TowPaths;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.text.FlxText;
 import openfl.utils.Assets as FileSystem;
-import towsterFlxUtil.TowPaths;
 
 class FreeplayState extends FlxState
 {

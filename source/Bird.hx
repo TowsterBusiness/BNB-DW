@@ -1,11 +1,11 @@
 package;
 
 import flixel.FlxG;
-import flixel.FlxSprite;
 import flixel.system.FlxSound;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import towsterFlxUtil.TowSprite;
+import flixel.FlxSprite;
 
 class Bird extends TowSprite
 {
@@ -64,10 +64,9 @@ class Bird extends TowSprite
 				jsonFileName = 'bird';
 				beats = [-4, 2, 4, 6];
 		}
-
+		
 		super(-160, 300, 'distractions/' + fileName);
-		if (incLoc == "RIGHT")
-		{
+		if (incLoc == "RIGHT"){
 			x = 1300;
 			y = 50;
 			flipX = true;

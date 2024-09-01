@@ -1,0 +1,38 @@
+{
+    "imagePath": "lovebirds_icons",
+    "animation": [
+        {
+            "prefix": "bob awake1",
+            "name": "happy",
+            "offset": [
+                0,
+                0
+            ],
+            "isLoop": false,
+            "flipX": false,
+            "frameRate": 1
+        },
+        {
+            "prefix": "bob awake2",
+            "name": "mid",
+            "offset": [
+                0,
+                0
+            ],
+            "isLoop": false,
+            "flipX": false,
+            "frameRate": 1
+        },
+        {
+            "prefix": "bob awake3",
+            "name": "sad",
+            "offset": [
+                0,
+                0
+            ],
+            "isLoop": false,
+            "flipX": false,
+            "frameRate": 1
+        }
+    ]
+}

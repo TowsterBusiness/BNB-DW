@@ -1,10 +1,10 @@
 package;
 
-import flixel.FlxG;
-import flixel.FlxSubState;
+import towsterFlxUtil.TowPaths;
 import flixel.system.FlxSound;
 import flixel.util.FlxSave;
-import towsterFlxUtil.TowPaths;
+import flixel.FlxG;
+import flixel.FlxSubState;
 
 class OptionsBirdSpeedSubstate extends FlxSubState
 {

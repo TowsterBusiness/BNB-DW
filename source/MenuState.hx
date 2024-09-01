@@ -1,18 +1,18 @@
 package;
 
-import flixel.FlxBasic;
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import towsterFlxUtil.Fade;
 import flixel.system.FlxSound;
 import flixel.text.FlxBitmapText;
+import flixel.FlxBasic;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
-import towsterFlxUtil.Fade;
-import towsterFlxUtil.TowPaths;
-import towsterFlxUtil.TowSprite;
 import towsterFlxUtil.TowUtils;
+import flixel.FlxG;
+import towsterFlxUtil.TowSprite;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import towsterFlxUtil.TowPaths;
+import flixel.FlxSprite;
+import flixel.FlxState;
 
 class MenuState extends FlxState
 {

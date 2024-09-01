@@ -1,18 +1,18 @@
 package;
 
-import PlayState.Rank;
-import flixel.FlxBasic;
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxSubState;
 import flixel.system.FlxSound;
-import flixel.text.FlxText;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
+import flixel.FlxG;
 import flixel.util.FlxTimer;
+import flixel.FlxBasic;
+import flixel.text.FlxText;
 import haxe.Timer;
 import towsterFlxUtil.TowPaths;
+import flixel.FlxSprite;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import PlayState.Rank;
+import flixel.util.FlxColor;
+import flixel.FlxSubState;
 
 class SongFinishedSubState extends FlxSubState
 {

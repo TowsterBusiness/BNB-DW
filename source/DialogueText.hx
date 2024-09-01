@@ -1,9 +1,9 @@
 package;
 
-import flixel.system.FlxSound;
-import flixel.text.FlxText;
-import haxe.Timer;
 import towsterFlxUtil.TowPaths;
+import flixel.system.FlxSound;
+import haxe.Timer;
+import flixel.text.FlxText;
 
 class DialogueText extends FlxText
 {

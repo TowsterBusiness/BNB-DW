@@ -1,8 +1,8 @@
 package;
 
+import towsterFlxUtil.TowPaths;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import towsterFlxUtil.TowPaths;
 
 class CreditsState extends FlxState
 {

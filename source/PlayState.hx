@@ -1,24 +1,24 @@
 package;
 
-import JsonTypes;
+import haxe.Timer;
+import flixel.text.FlxText;
 import flixel.FlxBasic;
+import flixel.tweens.FlxEase;
+import towsterFlxUtil.TowUtils;
+import flixel.ui.FlxBar;
+import flixel.tweens.FlxTween;
+import flixel.input.keyboard.FlxKey;
+import flixel.system.FlxSound;
+import JsonTypes;
+import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.FlxCamera;
+import towsterFlxUtil.TowPaths;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.input.keyboard.FlxKey;
-import flixel.system.FlxSound;
-import flixel.text.FlxText;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.ui.FlxBar;
-import haxe.Timer;
-import towsterFlxUtil.TowPaths;
 import towsterFlxUtil.TowSprite;
-import towsterFlxUtil.TowUtils;
 
 typedef Rank =
 {

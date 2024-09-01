@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bird_assets.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bird bop0000" x="95" y="95" width="200" height="164" frameX="0" frameY="-12" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0001" x="95" y="95" width="200" height="164" frameX="0" frameY="-12" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0002" x="385" y="95" width="192" height="175" frameX="-4" frameY="-2" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0003" x="385" y="95" width="192" height="175" frameX="-4" frameY="-2" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0004" x="667" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0005" x="667" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0006" x="948" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0007" x="948" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0008" x="948" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird bop0009" x="948" y="95" width="191" height="177" frameX="-4" frameY="0" frameWidth="200" frameHeight="177"/>
+	<SubTexture name="bird eat0000" x="1229" y="95" width="185" height="159" frameX="-3" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird eat0001" x="1229" y="95" width="185" height="159" frameX="-3" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird eat0002" x="1504" y="95" width="181" height="159" frameX="-5" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird eat0003" x="1504" y="95" width="181" height="159" frameX="-5" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird eat0004" x="95" y="362" width="181" height="159" frameX="0" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird eat0005" x="95" y="362" width="181" height="159" frameX="0" frameY="0" frameWidth="188" frameHeight="159"/>
+	<SubTexture name="bird flying0000" x="366" y="362" width="291" height="180" frameX="-3" frameY="-92" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0001" x="747" y="362" width="294" height="210" frameX="0" frameY="-62" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0002" x="1131" y="362" width="258" height="272" frameX="-36" frameY="0" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0003" x="1479" y="362" width="278" height="164" frameX="-16" frameY="-108" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0004" x="95" y="724" width="234" height="180" frameX="-60" frameY="-141" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0005" x="419" y="724" width="226" height="224" frameX="-68" frameY="-141" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird flying0006" x="1479" y="362" width="278" height="164" frameX="-16" frameY="-108" frameWidth="294" frameHeight="365"/>
+	<SubTexture name="bird landing0000" x="735" y="724" width="212" height="157" frameX="0" frameY="-30" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0001" x="735" y="724" width="212" height="157" frameX="0" frameY="-30" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0002" x="1037" y="724" width="195" height="187" frameX="-38" frameY="0" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0003" x="1037" y="724" width="195" height="187" frameX="-38" frameY="0" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0004" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0005" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0006" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0007" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0008" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird landing0009" x="1322" y="724" width="191" height="177" frameX="-38" frameY="-11" frameWidth="233" frameHeight="188"/>
+	<SubTexture name="bird squawk0000" x="1603" y="724" width="218" height="188" frameX="0" frameY="-42" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0001" x="1603" y="724" width="218" height="188" frameX="0" frameY="-42" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0002" x="95" y="1038" width="217" height="202" frameX="-1" frameY="-28" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0003" x="402" y="1038" width="217" height="207" frameX="-1" frameY="-23" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0004" x="709" y="1038" width="202" height="230" frameX="-7" frameY="0" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0005" x="709" y="1038" width="202" height="230" frameX="-7" frameY="0" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0006" x="1001" y="1038" width="207" height="191" frameX="-5" frameY="-38" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0007" x="1001" y="1038" width="207" height="191" frameX="-5" frameY="-38" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0008" x="1001" y="1038" width="207" height="191" frameX="-5" frameY="-38" frameWidth="218" frameHeight="230"/>
+	<SubTexture name="bird squawk0009" x="1001" y="1038" width="207" height="191" frameX="-5" frameY="-38" frameWidth="218" frameHeight="230"/>
+</TextureAtlas>

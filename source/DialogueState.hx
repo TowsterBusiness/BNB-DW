@@ -1,14 +1,14 @@
 package;
 
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.tweens.FlxTween;
 import openfl.text.StaticText;
-import towsterFlxUtil.TowPaths;
+import flixel.tweens.FlxTween;
 import towsterFlxUtil.TowSprite;
 import towsterFlxUtil.TowUtils;
+import flixel.FlxSprite;
+import towsterFlxUtil.TowPaths;
+import flixel.FlxG;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import flixel.FlxState;
 
 typedef DialogueTextJson =
 {

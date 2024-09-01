@@ -1,9 +1,9 @@
 package;
 
-import flixel.FlxSprite;
-import flixel.math.FlxPoint;
 import openfl.Lib;
+import flixel.math.FlxPoint;
 import towsterFlxUtil.TowPaths;
+import flixel.FlxSprite;
 
 class RatingSprite extends FlxSprite
 {

@@ -1,21 +1,21 @@
 package;
 
-import flixel.FlxCamera;
-import flixel.FlxG;
-import flixel.FlxObject;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.system.FlxSound;
 import flixel.text.FlxText;
+import towsterFlxUtil.Fade;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import haxe.Timer;
+import flixel.system.FlxSound;
+import flixel.FlxCamera;
 import flixel.util.FlxCollision;
 import flixel.util.FlxColor;
-import haxe.Timer;
-import towsterFlxUtil.Fade;
-import towsterFlxUtil.TowPaths;
+import flixel.FlxObject;
+import flixel.FlxG;
 import towsterFlxUtil.TowSprite;
 import towsterFlxUtil.TowUtils;
+import towsterFlxUtil.TowPaths;
+import flixel.FlxSprite;
+import flixel.FlxState;
 
 class StartScreen extends FlxState
 {

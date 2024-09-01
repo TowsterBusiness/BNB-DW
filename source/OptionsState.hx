@@ -1,12 +1,12 @@
 package;
 
+import flixel.system.FlxSound;
 import flixel.FlxBasic;
 import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.system.FlxSound;
 import towsterFlxUtil.TowPaths;
+import flixel.FlxSprite;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import flixel.FlxState;
 
 class OptionsState extends FlxState
 {
