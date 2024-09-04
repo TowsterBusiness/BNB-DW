@@ -63,26 +63,6 @@ class Conductor
 		}
 	}
 
-	public function pastBeat():Bool
-	{
-		var bpmNow:BPMJson = getBPM();
-
-		if (nextBeatCheck >= bpmNow.time && beatCheckBPM != bpmNow)
-		{
-			trace("I'm annoying " + bpmNow);
-			nextBeatCheck = bpmNow.time;
-			beatCheckBPM = bpmNow;
-			trace(Timer.stamp() * 1000);
-		}
-
-		if (getMil() > nextBeatCheck)
-		{
-			nextBeatCheck += (60000 / bpmNow.bpm);
-			return true;
-		}
-		return false;
-	}
-
 	public function pause():Void
 	{
 		if (isPause)
