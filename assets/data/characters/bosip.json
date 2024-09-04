@@ -10,7 +10,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip happy0",
@@ -21,7 +21,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip gameover0",
@@ -32,7 +32,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip bread crumb grab0",
@@ -43,7 +43,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip breadcrumb throw0",
@@ -54,7 +54,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip breadcrumb throw MISS0",
@@ -65,7 +65,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip gameover0",
@@ -76,7 +76,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bosip gameover retry0",
@@ -87,7 +87,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         }
     ]
 }

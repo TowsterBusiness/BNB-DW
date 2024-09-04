@@ -10,7 +10,7 @@
             ],
             "isLoop": true,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "twitter bird eat0",
@@ -21,7 +21,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "twitter bird landing0",
@@ -32,7 +32,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "twitter bird squawk0",
@@ -43,7 +43,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "twitter bird bop0",
@@ -54,7 +54,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         }
     ]
 }

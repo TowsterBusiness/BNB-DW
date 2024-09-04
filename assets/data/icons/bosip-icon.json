@@ -2,7 +2,7 @@
     "imagePath": "lovebirds_icons",
     "animation": [
         {
-            "prefix": "bosip1",
+            "prefix": "bosip30",
             "name": "happy",
             "offset": [
                 0,
@@ -10,7 +10,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 1
+            "frameRate": 30
         },
         {
             "prefix": "bosip2",
@@ -21,7 +21,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 1
+            "frameRate": 30
         },
         {
             "prefix": "bosip3",
@@ -32,7 +32,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 1
+            "frameRate": 30
         }
     ]
 }

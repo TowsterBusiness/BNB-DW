@@ -10,7 +10,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bob happy0",
@@ -21,7 +21,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bob grumpy0",
@@ -32,7 +32,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bob wake up gameover0",
@@ -43,7 +43,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         },
         {
             "prefix": "bob wake up gameover retry0",
@@ -54,7 +54,7 @@
             ],
             "isLoop": false,
             "flipX": false,
-            "frameRate": 24
+            "frameRate": 30
         }
     ]
 }
