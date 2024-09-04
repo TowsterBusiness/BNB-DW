@@ -1,21 +1,21 @@
 package;
 
-import flixel.text.FlxText;
-import towsterFlxUtil.Fade;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import haxe.Timer;
-import flixel.system.FlxSound;
 import flixel.FlxCamera;
-import flixel.util.FlxCollision;
-import flixel.util.FlxColor;
-import flixel.FlxObject;
 import flixel.FlxG;
-import towsterFlxUtil.TowSprite;
-import towsterFlxUtil.TowUtils;
-import towsterFlxUtil.TowPaths;
+import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.system.FlxSound;
+import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.util.FlxCollision;
+import flixel.util.FlxColor;
+import haxe.Timer;
+import towsterFlxUtil.Fade;
+import towsterFlxUtil.TowPaths;
+import towsterFlxUtil.TowSprite;
+import towsterFlxUtil.TowUtils;
 
 class StartScreen extends FlxState
 {
@@ -42,11 +42,8 @@ class StartScreen extends FlxState
 	{
 		super.create();
 
-		// song = FlxG.sound.load(TowPaths.getFilePath('sounds/menu/neg_bnb_menu_music_maybe_.wav'), 1, true);
 		FlxG.sound.playMusic(TowPaths.getFilePath('sounds/menu/neg_bnb_menu_music_maybe_.wav'), 1, true);
 		enterSound = FlxG.sound.load(TowPaths.getFilePath('sounds/menu/confirmMenu.ogg'));
-
-		// blackBG = new FlxSprite(0, 0, AssetPaths.blackScreen__png);
 
 		BG = new FlxSprite(0, 0).loadGraphic(TowPaths.getFilePath('start screen/sky', PNG));
 		BG.scale.set(0.7, 0.7);
@@ -58,11 +55,6 @@ class StartScreen extends FlxState
 		bushes.updateHitbox();
 		bushes.antialiasing = true;
 		add(bushes);
-
-		bench = new FlxSprite(465, 475).loadGraphic(TowPaths.getFilePath('start screen/bench', PNG));
-		bench.scale.set(0.7, 0.7);
-		bench.updateHitbox();
-		add(bench);
 
 		logoBumpin = new TowSprite(75, 65, 'start screen/logoBumpin', true);
 		logoBumpin.scale.set(0.7, 0.7);
@@ -110,9 +102,6 @@ class StartScreen extends FlxState
 	var startText:Array<String> = [
 		"Bob & Bosip Date Week",
 		"Made with love and care by:",
-		"Made with love and care by:\nArt: Pieroshki",
-		"Made with love and care by:\nArt: Pieroshki\nCode: Towster",
-		"Made with love and care by:\nArt: Pieroshki\nCode: Towster\nMusic: Fluffyhairs & No-p",
 		"Stole assets from FNF",
 		"Inspired by Rythm Heaven",
 	];
@@ -189,7 +178,6 @@ class StartScreen extends FlxState
 	override function onFocus()
 	{
 		conductor.unPause();
-		// song.time = conductor.getMil();
 		super.onFocus();
 	}
 }

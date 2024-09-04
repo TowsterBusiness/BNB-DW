@@ -1,24 +1,24 @@
 package;
 
-import haxe.Timer;
-import flixel.text.FlxText;
-import flixel.FlxBasic;
-import flixel.tweens.FlxEase;
-import towsterFlxUtil.TowUtils;
-import flixel.ui.FlxBar;
-import flixel.tweens.FlxTween;
-import flixel.input.keyboard.FlxKey;
-import flixel.system.FlxSound;
 import JsonTypes;
-import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.FlxBasic;
 import flixel.FlxCamera;
-import towsterFlxUtil.TowPaths;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import flixel.input.keyboard.FlxKey;
+import flixel.system.FlxSound;
+import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.ui.FlxBar;
+import haxe.Timer;
+import towsterFlxUtil.TowPaths;
 import towsterFlxUtil.TowSprite;
+import towsterFlxUtil.TowUtils;
 
 typedef Rank =
 {
@@ -138,139 +138,6 @@ class PlayState extends FlxState
 
 		countSprite = new SongCountDownSprite();
 		add(countSprite);
-	}
-
-	override public function update(elapsed:Float)
-	{
-		super.update(elapsed);
-
-		if (countState == 0)
-		{
-			countConductor = new Conductor(songJson.bpmList, -1000);
-			countState = 1;
-		}
-		else if (countState >= 1 && countState <= 4)
-		{
-			if (countConductor.pastBeat())
-			{
-				FlxG.sound.play('assets/sounds/123Go/bosip/' + countState + '.ogg');
-				countSprite.next();
-				countState++;
-			}
-		}
-		else if (countState == 5)
-		{
-			conductor = new Conductor(songJson.bpmList, 0);
-			songInst.play();
-			songInst.time = conductor.getMil();
-			countState = 6;
-		}
-		else
-		{
-			organizeNotes();
-
-			// songInst.time = songInst.length - 10;
-
-			birdList.forEachAlive(function(bird)
-			{
-				if (conductor.getMil() > bird.time + bird.actionTime(0))
-				{
-					// bruh lmao
-					bird.comeIn(Math.floor(Math.abs(bird.actionTime(0))));
-				}
-				if (conductor.getMil() > bird.time + bird.actionTime(1))
-				{
-					bird.peck();
-				}
-				if (conductor.getMil() > bird.time + bird.actionTime(2))
-				{
-					if (bird.shouldRank)
-					{
-						bird.shouldRank = false;
-						bird.playAnim('squawk');
-						bosip.playAnim('throw MISS');
-						bob.playAnim('grumpy');
-						changeHealth(-20);
-					}
-				}
-				if (conductor.getMil() > bird.time + bird.actionTime(3))
-				{
-					bird.goOut(bird.actionTime(3));
-				}
-			});
-
-			if (conductor.pastBeat() && !isGameover)
-			{
-				bob.playAnim('idle');
-				if (bosip.animation.finished || bosip.animation.curAnim.name == 'idle')
-				{
-					bosip.playAnim('idle');
-				}
-
-				if (healthP1.angle != 5)
-				{
-					FlxTween.tween(healthP1, {angle: 5}, 0.3, {ease: FlxEase.expoOut});
-					FlxTween.tween(healthP2, {angle: -5}, 0.3, {ease: FlxEase.expoOut});
-				}
-				else
-				{
-					FlxTween.tween(healthP1, {angle: -5}, 0.3, {ease: FlxEase.expoOut});
-					FlxTween.tween(healthP2, {angle: 5}, 0.3, {ease: FlxEase.expoOut});
-				}
-			}
-
-			if (FlxG.keys.anyJustPressed(inputKeys) && !isGameover)
-			{
-				bosip.playAnim('throw');
-				throwSound.play(true);
-
-				var closestTimedBird:Bird = null;
-				birdList.forEachAlive(function(bird)
-				{
-					if (getRank(bird.time) == rankings.length)
-						return;
-					if (closestTimedBird == null)
-						closestTimedBird = bird;
-					if (Math.abs(conductor.getMil() - bird.time) < Math.abs(conductor.getMil() - closestTimedBird.time))
-						closestTimedBird = bird;
-				});
-
-				if (closestTimedBird != null)
-				{
-					var tempRank = getRank(closestTimedBird.time);
-					ratingSprite.add(new RatingSprite(tempRank));
-					rankList.push({time: closestTimedBird.time, difference: conductor.getMil() - closestTimedBird.time});
-					closestTimedBird.shouldRank = false;
-					trace(conductor.getMil() - closestTimedBird.time);
-					switch (tempRank)
-					{
-						case 0:
-							changeHealth(15);
-						case 1:
-							changeHealth(5);
-						case 2:
-							changeHealth(-5);
-						case 3:
-							changeHealth(-10);
-					}
-				}
-			}
-
-			if (isGameover && FlxG.keys.anyJustPressed([ENTER, SPACE]))
-			{
-				retry();
-			}
-		}
-
-		// ! THIS IS DEBUG CODE
-		if (FlxG.keys.justPressed.F2)
-		{
-			songInst.onComplete();
-		}
-		if (FlxG.keys.justPressed.F1)
-		{
-			FlxG.switchState(new PlayState());
-		}
 	}
 
 	var preBeats = 4;
