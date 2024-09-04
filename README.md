@@ -1,5 +1,7 @@
 # Welcome
 
+![](bb.png)
+
 This is the start of a larger project but I thought I would chunk this out since at this point, this would be a really good rythm game starter
 
 All the functions are there for you to make a rythm heaven style rythm game
